@@ -1,0 +1,101 @@
+body {
+  font-family: sans-serif;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.costume-section {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 24px 20px;
+    margin-bottom: 24px;
+}
+
+.costume-comment {
+    padding-left: 12px;
+    border-left: 4px solid #888;
+    color: #555;
+}
+
+.variants {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.variant {
+  text-align: center;
+}
+
+.variant p {
+  margin: 0 0 6px;
+  font-weight: bold;
+}
+
+.variant img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.zoomable-image {
+  cursor: zoom-in;
+}
+
+#image-dialog {
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+#image-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+#dialog-image {
+  max-width: 90vw;
+  max-height: 90vh;
+  display: block;
+}
+
+#close-dialog {
+  position: fixed;
+  top: 16px;
+  right: 24px;
+  font-size: 32px;
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.site-footer {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.site-footer hr {
+  margin-bottom: 1.5rem;
+}
+
+.site-footer p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .variants {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 420px) {
+  .variants {
+    grid-template-columns: 1fr;
+  }
+}
