@@ -11,13 +11,64 @@ const variants = [
 
 const characters = [
   {
+    id: "kasumi",
+    name: "かすみ",
+    costumes: [
+      {
+        id: "costume10-12",
+        name: "コスチューム10-12",
+        comment: "スカートではなく着物なので比較的ガードが堅い",
+      },
+      {
+        id: "costume13-15",
+        name: "コスチューム13-15",
+        comment: "よく見ると細かい刺繡が入っている。縞パン好きな人はXをどうぞ",
+      },
+      {
+        id: "happy_wedding_costume",
+        name: "ハッピーウェディングコスチューム",
+        comment: "シンプルな形状だが、よく見ると各パンツで別の意匠が加えられている",
+      },
+      {
+        id: "pirates_of_the_7_seas_costume",
+        name: "七つの海のパイレーツコスチューム",
+        comment: "海賊テーマにちなんで錨のマークなどが入っている",
+      },
+      {
+        id: "summer_breeze_collection",
+        name: "潮風そよぐサマーワンピ",
+        comment: "コスチューム13-15と共通。ピンクの服に水色パンツは良く映える",
+      },
+      {
+        id: "witch_party_costume",
+        name: "ウィッチパーティー☆コスチューム",
+        comment: "大部分はコスチューム13-15と共通。Xパンツは特別に魔法使いパープル",
+      },
+      {
+        id: "energy_up_training_wear",
+        name: '汗だく！トレーニングウェア',
+        comment: "濡らすことで初めて差分が表れる変態仕様。Aは黒でYは青",
+      },
+      {
+        id: "high_society_costume",
+        name: "【復刻】お嬢様の休日コスチューム",
+        comment: "ブラウスの濡れ透けで見えるブラの色も変わる。そこも考慮して色を選びたい",
+      },
+      {
+        id: "school_uniform",
+        name: "【復刻】スクールコスチューム",
+        comment: "分かりにくいが、このコスチュームもトップスが透ける。パンツも刺繍ありで豪華",
+      },
+    ],
+  },
+  {
     id: "nico",
     name: "NiCO",
     costumes: [
       {
         id: "happy_wedding_costume",
         name: "ハッピーウェディングコスチューム",
-        comment: "Aのパンツは前も後ろも豪華なレース仕様",
+        comment: "王道はAのレース仕様だが、XやYの淡い色合いも捨てがたい",
       },
       {
         id: "pirates_of_the_7_seas_costume",
@@ -47,7 +98,7 @@ const characters = [
       {
         id: "school_uniform",
         name: "【復刻】スクールコスチューム",
-        comment: "黄緑系のレアな配色が多い。白のレース模様も豪華でいいね",
+        comment: "黄緑系のレアな配色が多い。Yパンツのレース模様も豪華で良い",
       },
     ],
   },
@@ -68,7 +119,7 @@ const characters = [
       {
         id: "happy_wedding_costume",
         name: "ハッピーウェディングコスチューム",
-        comment: "シンプルな形状だが、よく見ると各パンツで別の意匠が加えられている",
+        comment: "Aパンツは背面にもレース模様が入っており必見",
       },
       {
         id: "pirates_of_the_7_seas_costume",
@@ -118,7 +169,7 @@ const characters = [
       {
         id: "school_uniform",
         name: "【復刻】スクールコスチューム",
-        comment: "Xのパンツは後ろにちょっとした模様が施されている",
+        comment: "可愛らしい淡い色使い。R2は見えづらいがドット柄である",
       },
     ],
   },
@@ -127,9 +178,19 @@ const characters = [
     name: "ほのか",
     costumes: [
       {
-        id: "costume01-03",
-        name: "コスチューム01-03",
+        id: "costume01",
+        name: "コスチューム01",
         comment: "それぞれデザインが異なる。黄色いリボンは共通",
+      },
+      {
+        id: "costume02",
+        name: "コスチューム02",
+        comment: "トップスがブラウスなので濡れ透けアリ。縞や柄のブラは分かりやすい",
+      },
+      {
+        id: "costume03",
+        name: "コスチューム03",
+        comment: "リボンの色がコスチューム02と異なる",
       },
       {
         id: "costume07-09",
