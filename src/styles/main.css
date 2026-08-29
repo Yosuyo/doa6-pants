@@ -5,6 +5,95 @@ body {
   padding: 0 16px;
 }
 
+.howto {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 24px 0;
+}
+
+.howto h2 {
+  margin-top: 0;
+}
+
+.howto-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.howto-images img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.howto-steps {
+  margin: 16px 0 0;
+  padding-left: 1.25rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+.character-summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  user-select: none;
+  /* PC/タブレット: 開いている間、見出しを上部に固定していつでも閉じられるようにする */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #fff;
+  padding: 8px 0;
+}
+
+/* 各キャラ末尾の閉じるボタン（スマホ用） */
+.close-character {
+  display: none;
+  width: 100%;
+  margin: 8px 0 4px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+  background: #f2f2f2;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.close-character:hover {
+  background: #e8e8e8;
+}
+
+.character-summary::-webkit-details-marker {
+  display: none;
+}
+
+.character-summary::before {
+  content: "▶";
+  font-size: 0.8em;
+  color: #888;
+  transition: transform 0.15s ease;
+}
+
+.character-section[open] > .character-summary::before {
+  transform: rotate(90deg);
+}
+
+.character-summary h2 {
+  display: inline;
+  margin: 0;
+}
+
+.character-summary:hover h2 {
+  color: #c0392b;
+}
+
 .costume-section {
     background: #fff;
     border: 1px solid #ddd;
@@ -91,6 +180,20 @@ body {
 @media (max-width: 700px) {
   .variants {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .howto-images {
+    grid-template-columns: 1fr;
+  }
+
+  /* スマホ: 見出し固定は画像領域を圧迫するので解除し、末尾の閉じるボタンで対応 */
+  .character-summary {
+    position: static;
+    z-index: auto;
+  }
+
+  .close-character {
+    display: block;
   }
 }
 

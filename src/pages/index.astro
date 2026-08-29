@@ -342,6 +342,28 @@ const characters = [
     祝！LAST ROUND発売！DOA7開発決定！
   </p>
 
+  <section class="howto">
+    <h2>下着の色の変え方</h2>
+
+    <div class="howto-images">
+      <img
+        class="zoomable-image"
+        src="/images/etc/free_training.webp"
+        alt="フリートレーニングのコスチューム選択画面"
+      />
+      <img
+        class="zoomable-image"
+        src="/images/etc/ranked_match.webp"
+        alt="ランクマッチのコスチューム選択画面"
+      />
+    </div>
+
+    <ol class="howto-steps">
+      <li>コスチューム選択画面で A、X、Y、R2 から任意のボタンを入力する。</li>
+      <li>特殊な決定音（ボタンにより固有）が聞こえたら適用成功。</li>
+    </ol>
+  </section>
+
   <a href="#kasumi">かすみ</a>
   <a href="#nico">NiCO</a>
   <a href="#marie">マリー</a>
@@ -349,8 +371,8 @@ const characters = [
   <a href="#tamaki">たまき</a>
 
   {characters.map((character) => (
-    <section>
-      <h2 id={character.id}>{character.name}</h2>
+    <details class="character-section" id={character.id}>
+      <summary class="character-summary"><h2>{character.name}</h2></summary>
 
       {character.costumes.map((costume) => (
         <section class="costume-section">
@@ -371,7 +393,11 @@ const characters = [
           </div>
         </section>
       ))}
-    </section>
+
+      <button class="close-character" type="button" data-target={character.id}>
+        ▲ {character.name}を閉じる
+      </button>
+    </details>
   ))}
 
 <footer class="site-footer">
@@ -422,6 +448,33 @@ const characters = [
     if (event.target === dialog) {
       dialog.close();
     }
+  });
+
+  // ハッシュ付きでアクセス／リンククリックされたキャラの details を開いてからジャンプ
+  const openTargetFromHash = () => {
+    const id = decodeURIComponent(location.hash.slice(1));
+    if (!id) return;
+    const target = document.getElementById(id);
+    if (target instanceof HTMLDetailsElement) {
+      target.open = true;
+      target.scrollIntoView();
+    }
+  };
+
+  window.addEventListener("hashchange", openTargetFromHash);
+  openTargetFromHash();
+
+  // 各キャラ末尾の「閉じる」ボタン（主にスマホ用）
+  document.querySelectorAll(".close-character").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const id = (btn as HTMLButtonElement).dataset.target;
+      if (!id) return;
+      const target = document.getElementById(id);
+      if (target instanceof HTMLDetailsElement) {
+        target.open = false;
+        target.scrollIntoView({ block: "start" });
+      }
+    });
   });
 
 </script>
