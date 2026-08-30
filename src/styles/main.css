@@ -51,9 +51,9 @@ body {
   padding: 8px 0;
 }
 
-/* 各キャラ末尾の閉じるボタン（スマホ用） */
+/* 各キャラ末尾の閉じるボタン */
 .close-character {
-  display: none;
+  display: block;
   width: 100%;
   margin: 8px 0 4px;
   padding: 12px;
@@ -190,10 +190,6 @@ body {
   .character-summary {
     position: static;
     z-index: auto;
-  }
-
-  .close-character {
-    display: block;
   }
 }
 
