@@ -62,9 +62,11 @@ const strings = ui[locale];
     </ol>
   </section>
 
-  {characters.map((character) => (
-    <a href={`#${character.id}`}>{t(character.name, locale)}</a>
-  ))}
+  <nav class="character-nav">
+    {characters.map((character) => (
+      <a href={`#${character.id}`}>{t(character.name, locale)}</a>
+    ))}
+  </nav>
 
   {characters.map((character) => (
     <details class="character-section" id={character.id}>
