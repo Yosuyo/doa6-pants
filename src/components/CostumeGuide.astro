@@ -1,0 +1,162 @@
+---
+import "../styles/main.css";
+import { characters, variants, t, type Locale } from "../data/costumes";
+import { ui } from "../data/ui";
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const strings = ui[locale];
+---
+
+<!doctype html>
+<html lang={strings.lang}>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content={strings.metaDescription} />
+  <!-- Google Search Console -->
+  <meta name="google-site-verification" content="iGZ_np6nhTUjcr3Btabq0TI3XbEGjSX1vwf5sKWx-20" />
+
+  <title>{strings.pageTitle}</title>
+  <!-- Cloudflare Web Analytics -->
+  <script
+    defer
+    src='https://static.cloudflareinsights.com/beacon.min.js'
+    data-cf-beacon='{"token":"29cbb7e01e3646fa9e142319f27afc10"}'
+  ></script>
+  <!-- End Cloudflare Web Analytics -->
+</head>
+
+<body>
+  <nav class="lang-switch">
+    <a href={getRelativeLocaleUrl("ja", "")} aria-current={locale === "ja" ? "true" : undefined}>日本語</a>
+    <a href={getRelativeLocaleUrl("en", "")} aria-current={locale === "en" ? "true" : undefined}>English</a>
+  </nav>
+
+  <h1>{strings.siteTitle}</h1>
+  <p class="site-description" set:html={strings.siteDescriptionHtml}></p>
+
+  <section class="howto">
+    <h2>{strings.howtoTitle}</h2>
+
+    <div class="howto-images">
+      <img
+        class="zoomable-image"
+        src="/images/etc/free_training.webp"
+        alt={strings.freeTrainingAlt}
+      />
+      <img
+        class="zoomable-image"
+        src="/images/etc/ranked_match.webp"
+        alt={strings.rankedMatchAlt}
+      />
+    </div>
+
+    <ol class="howto-steps">
+      <li>{strings.howtoStep1}</li>
+      <li>{strings.howtoStep2}</li>
+    </ol>
+  </section>
+
+  {characters.map((character) => (
+    <a href={`#${character.id}`}>{t(character.name, locale)}</a>
+  ))}
+
+  {characters.map((character) => (
+    <details class="character-section" id={character.id}>
+      <summary class="character-summary"><h2>{t(character.name, locale)}</h2></summary>
+
+      {character.costumes.map((costume) => (
+        <section class="costume-section">
+          <h3>{t(costume.name, locale)}</h3>
+          <p class="costume-comment">{t(costume.comment, locale)}</p>
+
+          <div class="variants">
+            {variants.map((variant) => (
+              <div class="variant">
+                <p>{t(variant.label, locale)}</p>
+                <img
+                  class="zoomable-image"
+                  src={`/images/${character.id}/${costume.id}/${variant.key}.webp`}
+                  alt={`${t(character.name, locale)} ${t(costume.name, locale)} ${t(variant.label, locale)}`}
+                />
+              </div>
+            ))}
+          </div>
+        </section>
+      ))}
+
+      <button class="close-character" type="button" data-target={character.id}>
+        {strings.closeCharacter(t(character.name, locale))}
+      </button>
+    </details>
+  ))}
+
+<footer class="site-footer">
+  <hr />
+  <p set:html={strings.footerCopyrightHtml}></p>
+  <p>{strings.footerScreenshot}</p>
+</footer>
+
+<dialog id="image-dialog">
+  <button id="close-dialog">×</button>
+  <img id="dialog-image" src="" alt="" />
+</dialog>
+
+<script>
+  const dialog = document.getElementById("image-dialog") as HTMLDialogElement;
+  const dialogImage = document.getElementById("dialog-image") as HTMLImageElement;
+  const closeButton = document.getElementById("close-dialog") as HTMLButtonElement;
+
+  document.querySelectorAll(".zoomable-image").forEach((img) => {
+  img.addEventListener("click", () => {
+    dialogImage.src = (img as HTMLImageElement).src;
+    dialogImage.alt = (img as HTMLImageElement).alt;
+    dialog.showModal();
+  });
+});
+
+  closeButton.addEventListener("click", () => {
+    dialog.close();
+  });
+
+  dialog.addEventListener("click", (event) => {
+    if (event.target === dialog) {
+      dialog.close();
+    }
+  });
+
+  // ハッシュ付きでアクセス／リンククリックされたキャラの details を開いてからジャンプ
+  const openTargetFromHash = () => {
+    const id = decodeURIComponent(location.hash.slice(1));
+    if (!id) return;
+    const target = document.getElementById(id);
+    if (target instanceof HTMLDetailsElement) {
+      target.open = true;
+      target.scrollIntoView();
+    }
+  };
+
+  window.addEventListener("hashchange", openTargetFromHash);
+  openTargetFromHash();
+
+  // 各キャラ末尾の「閉じる」ボタン
+  document.querySelectorAll(".close-character").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const id = (btn as HTMLButtonElement).dataset.target;
+      if (!id) return;
+      const target = document.getElementById(id);
+      if (target instanceof HTMLDetailsElement) {
+        target.open = false;
+        target.scrollIntoView({ block: "start" });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
