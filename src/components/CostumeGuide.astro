@@ -10,6 +10,12 @@ interface Props {
 
 const { locale } = Astro.props;
 const strings = ui[locale];
+
+// canonical / hreflang 用の絶対URL。Astro.site (astro.config.mjs の site) を基点にする。
+const siteUrl = Astro.site ?? new URL("https://doa6-pants.pages.dev");
+const jaUrl = new URL("/", siteUrl).href;
+const enUrl = new URL("/en/", siteUrl).href;
+const canonicalUrl = locale === "en" ? enUrl : jaUrl;
 ---
 
 <!doctype html>
@@ -18,6 +24,13 @@ const strings = ui[locale];
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content={strings.metaDescription} />
+
+  <!-- 正規URL・言語別URL(SEO) -->
+  <link rel="canonical" href={canonicalUrl} />
+  <link rel="alternate" hreflang="ja" href={jaUrl} />
+  <link rel="alternate" hreflang="en" href={enUrl} />
+  <link rel="alternate" hreflang="x-default" href={jaUrl} />
+
   <!-- Google Search Console -->
   <meta name="google-site-verification" content="iGZ_np6nhTUjcr3Btabq0TI3XbEGjSX1vwf5sKWx-20" />
 
@@ -33,8 +46,8 @@ const strings = ui[locale];
 
 <body>
   <nav class="lang-switch">
-    <a href={getRelativeLocaleUrl("ja", "")} aria-current={locale === "ja" ? "true" : undefined}>日本語</a>
-    <a href={getRelativeLocaleUrl("en", "")} aria-current={locale === "en" ? "true" : undefined}>English</a>
+    <a href={getRelativeLocaleUrl("en", "")} data-lang="en" aria-current={locale === "en" ? "true" : undefined}>English</a>
+    <a href={getRelativeLocaleUrl("ja", "")} data-lang="ja" aria-current={locale === "ja" ? "true" : undefined}>日本語</a>
   </nav>
 
   <h1>{strings.siteTitle}</h1>
@@ -145,6 +158,17 @@ const strings = ui[locale];
 
   window.addEventListener("hashchange", openTargetFromHash);
   openTargetFromHash();
+
+  // 言語切り替えリンクを押したら、その選択を lang cookie に記憶する。
+  // これにより自動振り分け(functions/index.js)が以後その選択を尊重する。
+  document.querySelectorAll(".lang-switch a[data-lang]").forEach((link) => {
+    link.addEventListener("click", () => {
+      const lang = (link as HTMLAnchorElement).dataset.lang;
+      if (lang === "ja" || lang === "en") {
+        document.cookie = `lang=${lang}; Path=/; Max-Age=31536000; SameSite=Lax`;
+      }
+    });
+  });
 
   // 各キャラ末尾の「閉じる」ボタン
   document.querySelectorAll(".close-character").forEach((btn) => {
