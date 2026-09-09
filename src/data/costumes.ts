@@ -1042,6 +1042,92 @@ export const characters: Character[] = [
     ],
   },
   {
+    id: "nyotengu",
+    name: { ja: "女天狗", en: "Nyotengu" },
+    costumes: [
+      {
+        id: "costume01-03",
+        name: { ja: "コスチューム01-03", en: "Costume 01-03" },
+        comment: {
+          ja: "ボタンによる変化はなし。一応載せておきます",
+          en: "No changes from the buttons. Listing it just for completeness.",
+        },
+      },
+      {
+        id: "costume10-12",
+        name: { ja: "コスチューム10-12", en: "Costume 10-12" },
+        comment: {
+          ja: "前掛けがあるので少しパンツが見えづらい",
+          en: "The front drape makes the panties a bit hard to see.",
+        },
+      },
+      {
+        id: "happy_wedding_costume",
+        name: { ja: "ハッピーウェディングコスチューム", en: "Happy Wedding Costume" },
+        comment: {
+          ja: "他キャラのウェディングと共通",
+          en: "Shared with the other characters' wedding costumes.",
+        },
+      },
+      {
+        id: "pirates_of_the_7_seas_costume",
+        name: { ja: "七つの海のパイレーツコスチューム", en: "Pirates of the 7 Seas Costume" },
+        comment: {
+          ja: "こちらも他キャラの海賊コスチュームと共通",
+          en: "Also shared with the other characters' pirate costumes.",
+        },
+      },
+      {
+        id: "summer_breeze_collection",
+        name: { ja: "潮風そよぐサマーワンピ", en: "Summer Breeze Collection" },
+        comment: {
+          ja: "シンプルで鮮やかなパンツ",
+          en: "Simple, vivid panties.",
+        },
+      },
+      {
+        id: "witch_party_costume",
+        name: { ja: "ウィッチパーティー☆コスチューム", en: "Witch Party☆ Costume" },
+        comment: {
+          ja: "サマーワンピとおおむね共通",
+          en: "Largely shared with the Summer Breeze Collection.",
+        },
+      },
+      {
+        id: "energy_up_training_wear",
+        name: { ja: "汗だく！トレーニングウェア", en: "Energy Up! Training Wear" },
+        comment: {
+          ja: "ダンベルを振り回せる貴重なコスチューム",
+          en: "A rare costume where she gets to swing dumbbells around.",
+        },
+      },
+      {
+        id: "gust_mashup_costume",
+        name: { ja: "『ガスト』 コラボコスチューム", en: "Gust Collab Costume" },
+        comment: {
+          ja: "R2は謎の縦線が入ったデザイン",
+          en: "R2 has a design with mysterious vertical lines.",
+        },
+      },
+      {
+        id: "high_society_costume",
+        name: { ja: "【復刻】お嬢様の休日コスチューム", en: "[Revival] High Society Costume" },
+        comment: {
+          ja: "R2は鮮やかな赤、模様も入ってとても派手",
+          en: "R2 is a vivid red with a pattern too—very flashy.",
+        },
+      },
+      {
+        id: "school_uniform",
+        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Costume" },
+        comment: {
+          ja: "シンプルなパンツ。好きな柄をどうぞ",
+          en: "Simple panties. Take your pick of patterns.",
+        },
+      },
+    ],
+  },
+  {
     id: "tamaki",
     name: { ja: "たまき", en: "Tamaki" },
     costumes: [
