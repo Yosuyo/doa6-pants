@@ -1213,6 +1213,52 @@ export const characters: Character[] = [
       },
     ],
   },
+  {
+    id: "minato",
+    name: { ja: "みなと", en: "Minato" },
+    costumes: [
+      {
+        id: "costume01-03",
+        name: { ja: "コスチューム01-03", en: "Costume 01-03" },
+        comment: {
+          ja: "LR初の新キャラ。みなとの基本パンツはこちらとなります",
+          en: "The first new character in Last Round. These are Minato's default panties.",
+        },
+      },
+      {
+        id: "costume07-09",
+        name: { ja: "コスチューム07-09", en: "Costume 07-09" },
+        comment: {
+          ja: "コスチューム01-03と共通。派手な足技が多くて助かる",
+          en: "Shared with Costume 01-03. She has lots of flashy kick moves, which helps.",
+        },
+      },
+      {
+        id: "pirates_of_the_7_seas_costume",
+        name: { ja: "七つの海のパイレーツコスチューム", en: "Pirates of the 7 Seas Costume" },
+        comment: {
+          ja: "コピーキャラと聞いて一瞬落胆したが、可愛いお顔とおっぱいで全て許した",
+          en: "I was briefly let down to hear she's a clone character, but her cute face and chest made me forgive everything.",
+        },
+      },
+      {
+        id: "summer_breeze_collection",
+        name: { ja: "潮風そよぐサマーワンピ", en: "Summer Breeze Collection" },
+        comment: {
+          ja: "初心者向けコンセプトらしいが、技の種類多いし背向けもあるしで結構難しそうなキャラである",
+          en: "Supposedly a beginner-friendly concept, but with so many moves and back-turned stances, she looks pretty tricky to use.",
+        },
+      },
+      {
+        id: "sexy_chinese_dress",
+        name: { ja: "【復刻】セクシーチャイナドレス", en: "[Revival] Sexy Chinese Dress" },
+        comment: {
+          ja: "一部に人気のチャイナドレス。スタイルのよさが際立つ",
+          en: "A qipao with a dedicated fan following. It really shows off her figure.",
+        },
+      },
+    ],
+  },
 ];
 
 // 指定ロケールのテキストを返す。en が空なら ja にフォールバックする。
