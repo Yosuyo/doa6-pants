@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Kiro steering / local settings (keep local only)
+.kiro/
