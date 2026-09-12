@@ -1214,6 +1214,36 @@ export const characters: Character[] = [
     ],
   },
   {
+    id: "kula",
+    name: { ja: "クーラ・ダイアモンド", en: "Kula Diamond" },
+    costumes: [
+      {
+        id: "happy_wedding_costume",
+        name: { ja: "ハッピーウェディングコスチューム", en: "Happy Wedding Costume" },
+        comment: {
+          ja: "他キャラのウェディングと共通。クーラはコラボキャラ故にスカート衣装が少ない",
+          en: "Shared with the other characters' wedding costumes. Being a collab character, Kula has few skirted outfits.",
+        },
+      },
+      {
+        id: "maid_costume",
+        name: { ja: "【復刻】天使すぎるメイドコスチューム", en: "[Revival] Maid Costume" },
+        comment: {
+          ja: "ウェディングと共通。ガーターベルトが可愛い",
+          en: "Shared with the wedding costume. The garter belt is adorable.",
+        },
+      },
+      {
+        id: "nurse_costume",
+        name: { ja: "【復刻】純白ナースコスチューム", en: "[Revival] Nurse Costume" },
+        comment: {
+          ja: "白タイツ越しだが、こちらもウェディングと共通。",
+          en: "Seen through white tights, but this is also shared with the wedding costume.",
+        },
+      },
+    ],
+  },
+  {
     id: "minato",
     name: { ja: "みなと", en: "Minato" },
     costumes: [
@@ -1237,8 +1267,8 @@ export const characters: Character[] = [
         id: "pirates_of_the_7_seas_costume",
         name: { ja: "七つの海のパイレーツコスチューム", en: "Pirates of the 7 Seas Costume" },
         comment: {
-          ja: "コピーキャラと聞いて一瞬落胆したが、可愛いお顔とおっぱいで全て許した",
-          en: "I was briefly let down to hear she's a clone character, but her cute face and chest made me forgive everything.",
+          ja: "可愛いお顔とおっぱいで個人的には大満足な追加キャラ",
+          en: "With her cute face and chest, she's a new character I'm personally more than satisfied with.",
         },
       },
       {
