@@ -81,7 +81,7 @@ export const characters: Character[] = [
       },
       {
         id: "witch_party_costume",
-        name: { ja: "ウィッチパーティー☆コスチューム", en: "Witch Party☆ Costume" },
+        name: { ja: "ウィッチパーティー☆コスチューム", en: "Witch Party Costume" },
         comment: {
           ja: "大部分はコスチューム13-15と共通。Xパンツは特別に魔法使いパープル",
           en: "Mostly shared with Costume 13-15. X gets a special wizardly purple.",
@@ -105,7 +105,7 @@ export const characters: Character[] = [
       },
       {
         id: "school_uniform",
-        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Costume" },
+        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Uniform" },
         comment: {
           ja: "分かりにくいが、このコスチュームもトップスが透ける。パンツも刺繍ありで豪華",
           en: "Hard to tell, but this top goes see-through too. The panties are fancy with embroidery.",
@@ -151,7 +151,7 @@ export const characters: Character[] = [
       },
       {
         id: "witch_party_costume",
-        name: { ja: "ウィッチパーティー☆コスチューム", en: "Witch Party☆ Costume" },
+        name: { ja: "ウィッチパーティー☆コスチューム", en: "Witch Party Costume" },
         comment: {
           ja: "シンプルな前面リボンの形状。R2は水色の縞パン",
           en: "A simple design with a front ribbon. R2 is light-blue striped panties.",
@@ -175,7 +175,7 @@ export const characters: Character[] = [
       },
       {
         id: "school_uniform",
-        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Costume" },
+        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Uniform" },
         comment: {
           ja: "黄緑系のレアな配色が多い。Yパンツのレース模様も豪華で良い",
           en: "Lots of rare yellow-green tones. The lace pattern on the Y panties is gorgeous too.",
@@ -183,7 +183,7 @@ export const characters: Character[] = [
       },
       {
         id: "scientist's_holiday",
-        name: { ja: "Scientist's Holiday／陽だまりの熱力学", en: "Scientist's Holiday" },
+        name: { ja: "Scientist's Holiday／陽だまりの熱力学", en: "Scientist on Holiday: The Thermodynamics of Sunlight" },
         comment: {
           ja: "レース＋リボンのデザイン。カラバリ衣装は未検証なのであしからず",
           en: "A lace-and-ribbon design. Note that the color-variant outfits haven't been verified.",
@@ -245,7 +245,7 @@ export const characters: Character[] = [
       },
       {
         id: "witch_party_costume",
-        name: { ja: "ウィッチパーティー☆コスチューム", en: "Witch Party☆ Costume" },
+        name: { ja: "ウィッチパーティー☆コスチューム", en: "Witch Party Costume" },
         comment: {
           ja: "コスチューム07-09とほぼ同じ。R2のパンツは苺でなくネコ模様",
           en: "Nearly the same as Costume 07-09. R2 has a cat pattern instead of strawberries.",
@@ -293,7 +293,7 @@ export const characters: Character[] = [
       },
       {
         id: "school_uniform",
-        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Costume" },
+        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Uniform" },
         comment: {
           ja: "可愛らしい淡い色使い。R2は見えづらいがドット柄である",
           en: "Cute, soft color choices. It's hard to see, but R2 is polka-dotted.",
@@ -347,7 +347,7 @@ export const characters: Character[] = [
       },
       {
         id: "image_change",
-        name: { ja: "イメチェン☆スクールガールコスチューム", en: "Image Change☆ Schoolgirl Costume" },
+        name: { ja: "イメチェン☆スクールガールコスチューム", en: "Makeover School Uniform Costume" },
         comment: {
           ja: "コスチューム01と同一のもの",
           en: "Identical to Costume 01.",
@@ -363,7 +363,7 @@ export const characters: Character[] = [
       },
       {
         id: "witch_party_costume",
-        name: { ja: "ウィッチパーティー☆コスチューム", en: "Witch Party☆ Costume" },
+        name: { ja: "ウィッチパーティー☆コスチューム", en: "Witch Party Costume" },
         comment: {
           ja: "コスチューム02とほぼ同じ。Yは赤",
           en: "Nearly the same as Costume 02. Y is red.",
@@ -403,7 +403,7 @@ export const characters: Character[] = [
       },
       {
         id: "school_uniform",
-        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Costume" },
+        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Uniform" },
         comment: {
           ja: "シンプルな形状。Xは前後に★マーク、R2はお尻にウサギさん",
           en: "A simple shape. X has star marks front and back, and R2 has a little bunny on the rear.",
@@ -433,7 +433,7 @@ export const characters: Character[] = [
       },
       {
         id: "witch_party_costume",
-        name: { ja: "ウィッチパーティー☆コスチューム", en: "Witch Party☆ Costume" },
+        name: { ja: "ウィッチパーティー☆コスチューム", en: "Witch Party Costume" },
         comment: {
           ja: "ウェディングとほぼ同じ。Yは紫",
           en: "Nearly the same as the wedding costume. Y is purple.",
@@ -465,7 +465,7 @@ export const characters: Character[] = [
       },
       {
         id: "school_uniform",
-        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Costume" },
+        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Uniform" },
         comment: {
           ja: "王道アメスク。前面にリボンが2個ついている",
           en: "A classic American-style school look. There are two ribbons on the front.",
@@ -519,7 +519,7 @@ export const characters: Character[] = [
       },
       {
         id: "witch_party_costume",
-        name: { ja: "ウィッチパーティー☆コスチューム", en: "Witch Party☆ Costume" },
+        name: { ja: "ウィッチパーティー☆コスチューム", en: "Witch Party Costume" },
         comment: {
           ja: "コスチューム13-15と共通",
           en: "Shared with Costume 13-15.",
@@ -543,7 +543,7 @@ export const characters: Character[] = [
       },
       {
         id: "school_uniform",
-        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Costume" },
+        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Uniform" },
         comment: {
           ja: "教師側の衣装。R2の色合いいいですね",
           en: "The teacher's outfit. R2's color scheme is nice.",
@@ -597,7 +597,7 @@ export const characters: Character[] = [
       },
       {
         id: "school_uniform",
-        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Costume" },
+        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Uniform" },
         comment: {
           ja: "R2が前後の色が違うというDOAでは非常に珍しいパンツ",
           en: "R2 has different colors front and back—very rare panties for DOA.",
@@ -659,7 +659,7 @@ export const characters: Character[] = [
       },
       {
         id: "school_uniform",
-        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Costume" },
+        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Uniform" },
         comment: {
           ja: "R2は毛糸っぽい質感に加え、あやねモチーフの蝶がついている",
           en: "R2 has a knit-like texture plus a butterfly, Ayane's signature motif.",
@@ -729,7 +729,7 @@ export const characters: Character[] = [
       },
       {
         id: "witch_party_costume",
-        name: { ja: "ウィッチパーティー☆コスチューム", en: "Witch Party☆ Costume" },
+        name: { ja: "ウィッチパーティー☆コスチューム", en: "Witch Party Costume" },
         comment: {
           ja: "パンダの背面はこんなかんじ",
           en: "Here's what the panda's backside looks like.",
@@ -753,7 +753,7 @@ export const characters: Character[] = [
       },
       {
         id: "school_uniform",
-        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Costume" },
+        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Uniform" },
         comment: {
           ja: "保健室の先生コス。下着は派手",
           en: "A school-nurse look. The underwear is flashy.",
@@ -807,7 +807,7 @@ export const characters: Character[] = [
       },
       {
         id: "witch_party_costume",
-        name: { ja: "ウィッチパーティー☆コスチューム", en: "Witch Party☆ Costume" },
+        name: { ja: "ウィッチパーティー☆コスチューム", en: "Witch Party Costume" },
         comment: {
           ja: "サマーワンピとおおむね共通",
           en: "Largely shared with the Summer Breeze Collection.",
@@ -839,7 +839,7 @@ export const characters: Character[] = [
       },
       {
         id: "school_uniform",
-        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Costume" },
+        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Uniform" },
         comment: {
           ja: "柄にバリエーションがあってよい",
           en: "Nice variety in the patterns.",
@@ -963,7 +963,7 @@ export const characters: Character[] = [
       },
       {
         id: "witch_party_costume",
-        name: { ja: "ウィッチパーティー☆コスチューム", en: "Witch Party☆ Costume" },
+        name: { ja: "ウィッチパーティー☆コスチューム", en: "Witch Party Costume" },
         comment: {
           ja: "サマーワンピとおおむね共通",
           en: "Largely shared with the Summer Breeze Collection.",
@@ -987,7 +987,7 @@ export const characters: Character[] = [
       },
       {
         id: "school_uniform",
-        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Costume" },
+        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Uniform" },
         comment: {
           ja: "側面をよく見てほしい。なんと紐パンである",
           en: "Take a close look at the sides—they're actually side-tie panties.",
@@ -1049,7 +1049,7 @@ export const characters: Character[] = [
       },
       {
         id: "school_uniform",
-        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Costume" },
+        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Uniform" },
         comment: {
           ja: "パンツに連動して見せブラの色も変わる",
           en: "The visible bra changes color in sync with the panties.",
@@ -1103,7 +1103,7 @@ export const characters: Character[] = [
       },
       {
         id: "witch_party_costume",
-        name: { ja: "ウィッチパーティー☆コスチューム", en: "Witch Party☆ Costume" },
+        name: { ja: "ウィッチパーティー☆コスチューム", en: "Witch Party Costume" },
         comment: {
           ja: "サマーワンピとおおむね共通",
           en: "Largely shared with the Summer Breeze Collection.",
@@ -1135,7 +1135,7 @@ export const characters: Character[] = [
       },
       {
         id: "school_uniform",
-        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Costume" },
+        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Uniform" },
         comment: {
           ja: "シンプルなパンツ。好きな柄をどうぞ",
           en: "Simple panties. Take your pick of patterns.",
@@ -1221,7 +1221,7 @@ export const characters: Character[] = [
       },
       {
         id: "school_uniform",
-        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Costume" },
+        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Uniform" },
         comment: {
           ja: "緩い着こなしがたまきらしい一着。かなり分かりにくいが、透けブラあり",
           en: "A loosely worn look that's very Tamaki. Hard to spot, but there's a see-through bra.",
