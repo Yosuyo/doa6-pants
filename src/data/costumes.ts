@@ -845,6 +845,14 @@ export const characters: Character[] = [
           en: "Nice variety in the patterns.",
         },
       },
+      {
+        id: "stahltradition",
+        name: { ja: "Stahltradition／Feuer", en: "Stahltradition: Feuer" },
+        comment: {
+          ja: "せっかくだから俺はこの赤い服を選ぶぜ！",
+          en: "You bet I'm picking the red one!",
+        },
+      },
     ],
   },
   {
@@ -983,6 +991,14 @@ export const characters: Character[] = [
         comment: {
           ja: "側面をよく見てほしい。なんと紐パンである",
           en: "Take a close look at the sides—they're actually side-tie panties.",
+        },
+      },
+      {
+        id: "harmonieuse",
+        name: { ja: "Harmonieuse／風情", en: "Harmonieuse: Grâce" },
+        comment: {
+          ja: "豪奢な刺繍衣装からのシンプルなパンツ。ギャップですかね",
+          en: "Simple panties under such a lavish embroidered dress. Quite the gap.",
         },
       },
     ],
