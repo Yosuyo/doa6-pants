@@ -1144,6 +1144,60 @@ export const characters: Character[] = [
     ],
   },
   {
+    id: "phase4",
+    name: { ja: "フェーズ4", en: "PHASE 4" },
+    costumes: [
+      {
+        id: "happy_wedding_costume",
+        name: { ja: "ハッピーウェディングコスチューム", en: "Happy Wedding Costume" },
+        comment: {
+          ja: "黒いウェディングドレス。パンツは他キャラと共通",
+          en: "A black wedding dress. The panties are shared with the other characters.",
+        },
+      },
+      {
+        id: "pirates_of_the_7_seas_costume",
+        name: { ja: "七つの海のパイレーツコスチューム", en: "Pirates of the 7 Seas Costume" },
+        comment: {
+          ja: "こちらも他キャラの海賊コスチュームと共通",
+          en: "Also shared with the other characters' pirate costumes.",
+        },
+      },
+      {
+        id: "summer_breeze_collection",
+        name: { ja: "潮風そよぐサマーワンピ", en: "Summer Breeze Collection" },
+        comment: {
+          ja: "黒パンツは土汚れが目立つ",
+          en: "The black panties show dirt easily.",
+        },
+      },
+      {
+        id: "energy_up_training_wear",
+        name: { ja: "汗だく！トレーニングウェア", en: "Energy Up! Training Wear" },
+        comment: {
+          ja: "Aは黒ではなく深緑",
+          en: "A is deep green rather than black.",
+        },
+      },
+      {
+        id: "high_society_costume",
+        name: { ja: "【復刻】お嬢様の休日コスチューム", en: "[Revival] High Society Costume" },
+        comment: {
+          ja: "Aはよく見るとレース付き",
+          en: "Look closely and A has lace.",
+        },
+      },
+      {
+        id: "school_uniform",
+        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Uniform" },
+        comment: {
+          ja: "このパンツは布の質感があって良い",
+          en: "These panties have a nice fabric texture.",
+        },
+      },
+    ],
+  },
+  {
     id: "tamaki",
     name: { ja: "たまき", en: "Tamaki" },
     costumes: [
