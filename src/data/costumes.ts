@@ -1198,6 +1198,100 @@ export const characters: Character[] = [
     ],
   },
   {
+    id: "momiji",
+    name: { ja: "紅葉", en: "Momiji" },
+    costumes: [
+      {
+        id: "costume07-09",
+        name: { ja: "コスチューム07-09", en: "Costume 07-09" },
+        comment: {
+          ja: "ボタンによる変化はない。ただ強烈なインナーなので載せておく",
+          en: "No change from the buttons, but the inner wear is so intense I had to include it.",
+        },
+      },
+      {
+        id: "costume13-15",
+        name: { ja: "コスチューム13-15", en: "Costume 13-15" },
+        comment: {
+          ja: "見せブラの色も変わる。R2はノーブラ",
+          en: "The show-off bra changes color too. R2 is braless.",
+        },
+      },
+      {
+        id: "deluxe_costume",
+        name: { ja: "デラックスコスチューム", en: "Deluxe Costume" },
+        comment: {
+          ja: "キュロットの隙間からパンツが見えるという至高の一着。AとXの違いは分からなかった",
+          en: "A supreme outfit where the panties peek through the gaps in the culottes. I couldn't tell A and X apart.",
+        },
+      },
+      {
+        id: "happy_wedding_costume",
+        name: { ja: "ハッピーウェディングコスチューム", en: "Happy Wedding Costume" },
+        comment: {
+          ja: "他キャラのウェディングコスチュームと共通",
+          en: "Shared with the other characters' wedding costumes.",
+        },
+      },
+      {
+        id: "pirates_of_the_7_seas_costume",
+        name: { ja: "七つの海のパイレーツコスチューム", en: "Pirates of the 7 Seas Costume" },
+        comment: {
+          ja: "こちらも他キャラの海賊コスチュームと共通",
+          en: "Also shared with the other characters' pirate costumes.",
+        },
+      },
+      {
+        id: "summer_breeze_collection",
+        name: { ja: "潮風そよぐサマーワンピ", en: "Summer Breeze Collection" },
+        comment: {
+          ja: "Yの花柄は一見の価値あり",
+          en: "Y's floral pattern is worth a look.",
+        },
+      },
+      {
+        id: "witch_party_costume",
+        name: { ja: "ウィッチパーティー☆コスチューム", en: "Witch Party Costume" },
+        comment: {
+          ja: "シンプルなパンツ構成。ガーターベルト有",
+          en: "A simple set of panties. Comes with a garter belt.",
+        },
+      },
+      {
+        id: "energy_up_training_wear",
+        name: { ja: "汗だく！トレーニングウェア", en: "Energy Up! Training Wear" },
+        comment: {
+          ja: "なんかとても透けている。R2でカッコいい一枚が撮れたので見てほしい",
+          en: "Somehow super see-through. I got a cool shot with R2, so take a look.",
+        },
+      },
+      {
+        id: "gust_mashup_costume",
+        name: { ja: "『ガスト』 コラボコスチューム", en: "Gust Collab Costume" },
+        comment: {
+          ja: "シンプルとはいえ、コラボパンツの色が変わってくれるだけでありがたい",
+          en: "Simple, sure, but just having the collab panties change color is a treat.",
+        },
+      },
+      {
+        id: "high_society_costume",
+        name: { ja: "【復刻】お嬢様の休日コスチューム", en: "[Revival] High Society Costume" },
+        comment: {
+          ja: "赤の縞はとても目立つ",
+          en: "The red stripes really stand out.",
+        },
+      },
+      {
+        id: "school_uniform",
+        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Uniform" },
+        comment: {
+          ja: "なんとあの締め込みパンツが使える。とてもうれしい",
+          en: "Amazingly, you get those deeply wedged panties. So happy about it.",
+        },
+      },
+    ],
+  },
+  {
     id: "tamaki",
     name: { ja: "たまき", en: "Tamaki" },
     costumes: [
