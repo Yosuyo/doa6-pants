@@ -1292,6 +1292,128 @@ export const characters: Character[] = [
     ],
   },
   {
+    id: "rachel",
+    name: { ja: "レイチェル", en: "Rachel" },
+    costumes: [
+      {
+        id: "costume04-06",
+        name: { ja: "コスチューム04-06", en: "Costume 04-06" },
+        comment: {
+          ja: "シンプルなパンツ。ブラの色は変わらない",
+          en: "Simple panties. The bra color stays the same.",
+        },
+      },
+      {
+        id: "costume10-12",
+        name: { ja: "コスチューム10-12", en: "Costume 10-12" },
+        comment: {
+          ja: "コスごとにブラ色のボタン割り当てが若干違う。11は紫黒赤ノーブラ、12は黒紫赤ノーブラの順",
+          en: "The bra-color button mapping differs slightly per costume. 11 is purple/black/red/braless, 12 is black/purple/red/braless.",
+        },
+      },
+      {
+        id: "happy_wedding_costume",
+        name: { ja: "ハッピーウェディングコスチューム", en: "Happy Wedding Costume" },
+        comment: {
+          ja: "他キャラのウェディングコスチュームと共通",
+          en: "Shared with the other characters' wedding costumes.",
+        },
+      },
+      {
+        id: "summer_breeze_collection",
+        name: { ja: "潮風そよぐサマーワンピ", en: "Summer Breeze Collection" },
+        comment: {
+          ja: "セクシーなパンツ。Xの透け仕様がいいですね",
+          en: "Sexy panties. X's see-through version is a nice touch.",
+        },
+      },
+      {
+        id: "high_society_costume",
+        name: { ja: "【復刻】お嬢様の休日コスチューム", en: "[Revival] High Society Costume" },
+        comment: {
+          ja: "このコスチュームで黒基調は珍しい。ブラは透けない",
+          en: "A black-based look is rare for this costume. The bra doesn't show through.",
+        },
+      },
+      {
+        id: "school_uniform",
+        name: { ja: "【復刻】スクールコスチューム", en: "[Revival] School Uniform" },
+        comment: {
+          ja: "すごいミニなスカート。ブラの色も変わる",
+          en: "A super mini skirt. The bra changes color too.",
+        },
+      },
+    ],
+  },
+  {
+    id: "mai",
+    name: { ja: "不知火舞", en: "Shiranui Mai" },
+    costumes: [
+      {
+        id: "happy_wedding_costume",
+        name: { ja: "ハッピーウェディングコスチューム", en: "Happy Wedding Costume" },
+        comment: {
+          ja: "他キャラのウェディングと共通。白ストッキングあり",
+          en: "Shared with the other characters' wedding costumes. Comes with white stockings.",
+        },
+      },
+      {
+        id: "pirates_of_the_7_seas_costume",
+        name: { ja: "七つの海のパイレーツコスチューム", en: "Pirates of the 7 Seas Costume" },
+        comment: {
+          ja: "こちらも他キャラの海賊パンツと同一",
+          en: "Also identical to the other characters' pirate panties.",
+        },
+      },
+      {
+        id: "maid_costume",
+        name: { ja: "【復刻】天使すぎるメイドコスチューム", en: "[Revival] Maid Costume" },
+        comment: {
+          ja: "ウェディングと共通。いいお尻ですね",
+          en: "Shared with the wedding costume. Nice rear, isn't it.",
+        },
+      },
+      {
+        id: "nurse_costume",
+        name: { ja: "【復刻】純白ナースコスチューム", en: "[Revival] Nurse Costume" },
+        comment: {
+          ja: "こちらもウェディングと共通。コラボキャラは基本パンツのバリエーションが少ない",
+          en: "Also shared with the wedding costume. Collab characters generally have little panty variety.",
+        },
+      },
+    ],
+  },
+  {
+    id: "kula",
+    name: { ja: "クーラ・ダイアモンド", en: "Kula Diamond" },
+    costumes: [
+      {
+        id: "happy_wedding_costume",
+        name: { ja: "ハッピーウェディングコスチューム", en: "Happy Wedding Costume" },
+        comment: {
+          ja: "他キャラのウェディングと共通。クーラはコラボキャラ故にスカート衣装が少ない",
+          en: "Shared with the other characters' wedding costumes. Being a collab character, Kula has few skirted outfits.",
+        },
+      },
+      {
+        id: "maid_costume",
+        name: { ja: "【復刻】天使すぎるメイドコスチューム", en: "[Revival] Maid Costume" },
+        comment: {
+          ja: "ウェディングと共通。ガーターベルトが可愛い",
+          en: "Shared with the wedding costume. The garter belt is adorable.",
+        },
+      },
+      {
+        id: "nurse_costume",
+        name: { ja: "【復刻】純白ナースコスチューム", en: "[Revival] Nurse Costume" },
+        comment: {
+          ja: "白タイツ越しだが、こちらもウェディングと共通。",
+          en: "Seen through white tights, but this is also shared with the wedding costume.",
+        },
+      },
+    ],
+  },
+  {
     id: "tamaki",
     name: { ja: "たまき", en: "Tamaki" },
     costumes: [
@@ -1373,36 +1495,6 @@ export const characters: Character[] = [
         comment: {
           ja: "緩い着こなしがたまきらしい一着。かなり分かりにくいが、透けブラあり",
           en: "A loosely worn look that's very Tamaki. Hard to spot, but there's a see-through bra.",
-        },
-      },
-    ],
-  },
-  {
-    id: "kula",
-    name: { ja: "クーラ・ダイアモンド", en: "Kula Diamond" },
-    costumes: [
-      {
-        id: "happy_wedding_costume",
-        name: { ja: "ハッピーウェディングコスチューム", en: "Happy Wedding Costume" },
-        comment: {
-          ja: "他キャラのウェディングと共通。クーラはコラボキャラ故にスカート衣装が少ない",
-          en: "Shared with the other characters' wedding costumes. Being a collab character, Kula has few skirted outfits.",
-        },
-      },
-      {
-        id: "maid_costume",
-        name: { ja: "【復刻】天使すぎるメイドコスチューム", en: "[Revival] Maid Costume" },
-        comment: {
-          ja: "ウェディングと共通。ガーターベルトが可愛い",
-          en: "Shared with the wedding costume. The garter belt is adorable.",
-        },
-      },
-      {
-        id: "nurse_costume",
-        name: { ja: "【復刻】純白ナースコスチューム", en: "[Revival] Nurse Costume" },
-        comment: {
-          ja: "白タイツ越しだが、こちらもウェディングと共通。",
-          en: "Seen through white tights, but this is also shared with the wedding costume.",
         },
       },
     ],
