@@ -1543,6 +1543,14 @@ export const characters: Character[] = [
           en: "A qipao with a dedicated fan following. It really shows off her figure.",
         },
       },
+      {
+        id: "diner_part_timer",
+        name: { ja: "Aft’School Diner／Fri. Pop", en: "Diner Part-Timer: Friday Pop" },
+        comment: {
+          ja: "みなとコスチューム01-03と共通。スカートのふんわり感は良い",
+          en: "Shared with Minato's Costume 01-03. The skirt has a nice fluffy feel.",
+        },
+      },
     ],
   },
 ];
