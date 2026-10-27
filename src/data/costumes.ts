@@ -1141,6 +1141,14 @@ export const characters: Character[] = [
           en: "Simple panties. Take your pick of patterns.",
         },
       },
+      {
+        id: "demonic_tengu",
+        name: { ja: "大魔女天狗／深淵", en: "Demonic Tengu: Abyss" },
+        comment: {
+          ja: "超ミニスカートだが、意外とガードは固い",
+          en: "A super mini skirt, but surprisingly well-guarded.",
+        },
+      },
     ],
   },
   {
@@ -1517,6 +1525,30 @@ export const characters: Character[] = [
         comment: {
           ja: "コスチューム01-03と共通。派手な足技が多くて助かる",
           en: "Shared with Costume 01-03. She has lots of flashy kick moves, which helps.",
+        },
+      },
+      {
+        id: "happy_wedding_costume",
+        name: { ja: "ハッピーウェディングコスチューム", en: "Happy Wedding Costume" },
+        comment: {
+          ja: "他キャラのウェディングパンツと共通",
+          en: "Shared with the other characters' wedding panties.",
+        },
+      },
+      {
+        id: "witch_party_costume",
+        name: { ja: "ウィッチパーティー☆コスチューム", en: "Witch Party Costume" },
+        comment: {
+          ja: "スカート素材が固め。ただし深いスリットがある",
+          en: "The skirt fabric is on the stiff side, but it has a deep slit.",
+        },
+      },
+      {
+        id: "high_society_costume",
+        name: { ja: "【復刻】お嬢様の休日コスチューム", en: "[Revival] High Society Costume" },
+        comment: {
+          ja: "他キャラよりスカートの彩度が高い気がする。おすすめはYパンツ",
+          en: "The skirt seems more vivid than the other characters'. I recommend the Y panties.",
         },
       },
       {
