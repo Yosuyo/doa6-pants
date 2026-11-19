@@ -409,6 +409,14 @@ export const characters: Character[] = [
           en: "A simple shape. X has star marks front and back, and R2 has a little bunny on the rear.",
         },
       },
+      {
+        id: "melty_sweet",
+        name: { ja: "メルティスウィート／ズンダモチ", en: "Melty Sweet: Zunda Mochi" },
+        comment: {
+          ja: "動けるか心配になるくらいの重量級ロリータ服。下着は服と同じトーンの明るい縞パン",
+          en: "A heavyweight lolita dress that makes you wonder if she can even move. The panties are bright striped ones in the same tone as the outfit.",
+        },
+      },
     ],
   },
   {
